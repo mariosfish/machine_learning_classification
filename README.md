@@ -1,6 +1,6 @@
 # Machine Learning Classification
 
-This is a repository about my Master's thesis about machine learning algorithms for classification in Python. It contains four data sets that I will use to test some classification algorithms.
+This is a repository for my Master's thesis about machine learning algorithms for classification in Python. It contains four data sets that I will use to test some classification algorithms.
 
 ## Data sets
 
