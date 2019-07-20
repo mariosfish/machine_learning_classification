@@ -22,7 +22,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install  the de
 - matplotlib
 - jupyterlab
 
-or just use the requirements.txt file found [here](https://github.com/mariosfish/machine_learning_classification/blob/master/requirements.txt) to install them as below:
+or just use the *requirements.txt* file found [here](https://github.com/mariosfish/machine_learning_classification/blob/master/requirements.txt) to install them as below:
 
 ```bash
 pip install -r requirements.txt
