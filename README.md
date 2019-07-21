@@ -37,7 +37,7 @@ jupyter notebook
 After opening the browser, open an *.ipynb* file and run it. You can also add your code or edit the existing one to your desires.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
