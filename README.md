@@ -31,14 +31,14 @@ pip install -r requirements.txt
 
 ## Usage
 
-To open a  new Jupyter notebook on the command prompt run:
+To launch a new Jupyter notebook open a command prompt and type:
 ```bash
 jupyter notebook
 ```
-After opening the browser create a new Python notebook and use this to run your code.
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+After opening the browser, open an *.ipynb* file and run it. You can also add your code or edit the existing one to your desires.
 
+## Contributing
+Pull requests are welcome.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
