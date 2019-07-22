@@ -21,6 +21,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install  the de
 - scikit-learn
 - matplotlib
 - jupyterlab
+- seaborn
 
 or just use the *requirements.txt* file found [here](https://github.com/mariosfish/machine_learning_classification/blob/master/requirements.txt) to install them as below:
 
