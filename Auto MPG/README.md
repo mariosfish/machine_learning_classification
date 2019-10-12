@@ -4,7 +4,6 @@
 
 - missing values for `horsepower` replaced with the mean of `horsepower`.
 - all columns are numbers.
-- perform `GridSearchCV` for every estimator.
 
 ## Model 2
 
