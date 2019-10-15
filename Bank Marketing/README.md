@@ -27,3 +27,8 @@
 
 - get_dummies for categorical data + column "pdays".
 - SMOTE for oversampling.
+
+## Model 7
+
+- get_dummies for categorical data + column "pdays".
+- NEAR MISS for undersampling.
