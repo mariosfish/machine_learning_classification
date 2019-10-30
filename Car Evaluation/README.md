@@ -3,7 +3,7 @@
 ## Paper results
 
 | |Accuracy             | CV Accuracy | 
-|:----------:|:----------------------|:-------------:|
+|:----------|:----------------------|:-------------:|
 | Logistic Regression  |    -    | - |  -|  -|
 | Decision Tree        | 0.908       | 0.932 | 
 | Neural Network (MLP) | 0.908     | 0.935 |
