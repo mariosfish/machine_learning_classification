@@ -1,5 +1,13 @@
 # Models for  Auto MPG Data set
 
+## Quinlan's results
+
+| |Mean squared error (MSE) | Mean absolute error (MAE)       |
+|--------------------------|---------------------------|------|
+| Linear Regression        | 19.4                      | 2.61 |
+| Decision tree            | 14.7                      | 2.11 |
+| Neural Network           | 12.5                      | 2.02 |
+
 ## Model 1 (as in Kaggle.com)
 
 - missing values for `horsepower` replaced with the mean of `horsepower`.
@@ -49,10 +57,3 @@
 | Neural Network (MLP) | 7.431  | 1.945       | 0.814    | 0.875 |
 
 
-## Quinlan's results
-
-| |Mean squared error (MSE) | Mean absolute error (MAE)       |
-|--------------------------|---------------------------|------|
-| Linear Regression        | 19.4                      | 2.61 |
-| Decision tree            | 14.7                      | 2.11 |
-| Neural Network           | 12.5                      | 2.02 |
