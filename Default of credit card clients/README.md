@@ -40,24 +40,24 @@
 
 ## Model 3
 
-- get_dummies categorical data (`'PAY_1'`, `'PAY_2'`, `'PAY_3'`, `'PAY_4'`, `'PAY_5'`, `'PAY_6'`).
+- get_dummies categorical data (`'EDUCATION'`,`'MARRIAGE'`,`'SEX'`,`'PAY_1'`, `'PAY_2'`, `'PAY_3'`, `'PAY_4'`, `'PAY_5'`, `'PAY_6'`).
 
 | |Accuracy             | CV Accuracy | Precision | Recall | F1    | AUC          |
 |----------------------|-------------|-----------|--------|-------|-------|-------|
-| Logistic Regression  | 0.816       | 0.779     | 0.670  | 0.352 | 0.462 | 0.771 |
+| Logistic Regression  | 0.817       | 0.779     | 0.677  | 0.353 | 0.464 | 0.772 |
 | Decision Tree        | 0.814       | 0.818     | 0.700  | 0.301 | 0.421 | 0.719 |
-| Neural Network (MLP) | 0.812       | 0.779     | 0.641  | 0.365 | 0.466 | 0.764 |
+| Neural Network (MLP) | 0.813       | 0.779     | 0.652  | 0.357 | 0.462 | 0.765 |
 
 ## Model 4
 
-- get_dummies categorical data (`'PAY_1'`, `'PAY_2'`, `'PAY_3'`, `'PAY_4'`, `'PAY_5'`, `'PAY_6'`).
+- get_dummies categorical data (`'EDUCATION'`,`'MARRIAGE'`,`'SEX'`,`'PAY_1'`, `'PAY_2'`, `'PAY_3'`, `'PAY_4'`, `'PAY_5'`, `'PAY_6'`).
 - exclude features `BILL_ATM2`,..., `BILL_ATM6`.
 
 | |Accuracy             | CV Accuracy | Precision | Recall | F1    | AUC          |
 |----------------------|-------------|-----------|--------|-------|-------|-------|
-| Logistic Regression  | 0.816       | 0.779     | 0.671  | 0.352 | 0.461 | 0.771 |
+| Logistic Regression  | 0.817       | 0.779     | 0.677  | 0.353 | 0.464 | 0.771 |
 | Decision Tree        | 0.814       | 0.818     | 0.700  | 0.301 | 0.421 | 0.719 |
-| Neural Network (MLP) | 0.816       | 0.779     | 0.665  | 0.359 | 0.467 | 0.769 |
+| Neural Network (MLP) | 0.817       | 0.777     | 0.650  | 0.371 | 0.472 | 0.769 |
 
 ## Model 5
 
@@ -67,21 +67,21 @@
 
 | |Accuracy             | CV Accuracy | Precision | Recall | F1    | AUC          |
 |----------------------|-------------|-----------|--------|-------|-------|-------|
-| Logistic Regression  | 0.680       | 0.779     | 0.365  | 0.577 | 0.448 | 0.692 |
-| Decision Tree        | 0.715       | 0.821     | 0.407  | 0.590 | 0.482 | 0.714 |
-| Neural Network (MLP) | 0.730       | 0.655     | 0.429  | 0.612 | 0.505 | 0.748 |
+| Logistic Regression  | 0.681       | 0.779     | 0.366  | 0.576 | 0.448 | 0.690 |
+| Decision Tree        | 0.718       | 0.821     | 0.409  | 0.581 | 0.480 | 0.715 |
+| Neural Network (MLP) | 0.742       | 0.664     | 0.443 | 0.584 | 0.504 | 0.748 |
 
 ## Model 6
 
-- get_dummies categorical data (`'PAY_1'`, `'PAY_2'`, `'PAY_3'`, `'PAY_4'`, `'PAY_5'`, `'PAY_6'`).
+- get_dummies categorical data (`'EDUCATION'`,`'MARRIAGE'`,`'SEX'`,`'PAY_1'`, `'PAY_2'`, `'PAY_3'`, `'PAY_4'`, `'PAY_5'`, `'PAY_6'`).
 - perform oversampling with SMOTE.
 - exclude features `BILL_ATM2`,..., `BILL_ATM6`.
 
 | |Accuracy             | CV Accuracy | Precision | Recall | F1    | AUC          |
 |----------------------|-------------|-----------|--------|-------|-------|-------|
-| Logistic Regression  | 0.813       | 0.779     | 0.644  | 0.371 | 0.471 | 0.757 |
-| Decision Tree        | 0.786       | 0.818     | 0.522  | 0.529 | 0.526 | 0.724 |
-| Neural Network (MLP) | 0.802       | 0.779     | 0.588  | 0.397 | 0.474 | 0.754 |
+| Logistic Regression  | 0.817       | 0.779     | 0.678  | 0.355 | 0.466 | 0.771 |
+| Decision Tree        | 0.786       | 0.818     | 0.522  | 0.529 | 0.526 | 0.729 |
+| Neural Network (MLP) | 0.812       | 0.777    | 0.644  | 0.360 | 0.462 | 0.768 |
 
 ## Model 7
 
@@ -91,9 +91,9 @@
 
 | |Accuracy             | CV Accuracy | Precision | Recall | F1    | AUC          |
 |----------------------|-------------|-----------|--------|-------|-------|-------|
-| Logistic Regression  | 0.405       | 0.779     | 0.225  | 0.675 | 0.337 | 0.448 |
+| Logistic Regression  | 0.405       | 0.779     | 0.226  | 0.680 | 0.339 | 0.448 |
 | Decision Tree        | 0.532       | 0.821     | 0.246  | 0.524 | 0.335 | 0.489 |
-| Neural Network (MLP) | 0.398       | 0.655     | 0.228  | 0.704 | 0.344 | 0.436 |
+| Neural Network (MLP) | 0.403       | 0.664     | 0.231  | 0.710 | 0.348 | 0.438 |
 
 ## Model 8
 
@@ -103,6 +103,6 @@
 
 | |Accuracy             | CV Accuracy | Precision | Recall | F1    | AUC         |
 |----------------------|-------------|-----------|--------|-------|-------|------|
-| Logistic Regression  | 0.430       | 0.779     | 0.232  | 0.669 | 0.345 | 0.48 |
-| Decision Tree        | 0.516       | 0.818     | 0.233  | 0.506 | 0.319 | 0.48 |
-| Neural Network (MLP) | 0.407       | 0.779     | 0.228  | 0.687 | 0.342 | 0.45 |
+| Logistic Regression  | 0.430       | 0.779     | 0.232  | 0.668 | 0.345 | 0.482 |
+| Decision Tree        | 0.516       | 0.818     | 0.233  | 0.506 | 0.319 | 0.480 |
+| Neural Network (MLP) | 0.413       | 0.777    | 0.229  | 0.684 | 0.343 | 0.453 |
