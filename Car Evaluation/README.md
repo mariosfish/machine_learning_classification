@@ -12,40 +12,40 @@
 
 - Label encoder categorical data.
 
-| |Accuracy             | CV Accuracy | MSE   | MAE          |
-|----------------------|-------------|-------|-------|-------|
-| Logistic Regression  | 0.819       | 0.779 | 0.306 | 0.218 |
-| Decision Tree        | 0.869       | 0.802 | 0.189 | 0.150 |
-| Neural Network (MLP) | 0.925       | 0.897 | 0.116 | 0.089 |
+| Models               | Accuracy | CV Accuracy | Precision | Recall | F1    |
+|----------------------|----------|-------------|-----------|--------|-------|
+| Logistic Regression  | 0.819    | 0.779       | 0.707     | 0.643  | 0.667 |
+| Decision Tree        | 0.969    | 0.884       | 0.892     | 0.903  | 0.894 |
+| Neural Network (MLP) | 0.925    | 0.898       | 0.845     | 0.807  | 0.815 |
 
 ## Model 2
 
 - get_dummies categorical data.
 
-|| Accuracy             | CV Accuracy | MSE   | MAE         |
-|----------------------|-------------|-------|-------|-------|
-| Logistic Regression  | 0.929       | 0.833 | 0.089 | 0.077 |
-| Decision Tree        | 0.869       | 0.804 | 0.229 | 0.164 |
-| Neural Network (MLP) | 0.952       | 0.898 | 0.066 | 0.054 |
+|        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |
+|:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|
+| Logistic Regression  | 0.929    | 0.833       | 0.833     | 0.854  | 0.843 |
+| Decision Tree        | 0.960    | 0.844       | 0.872     | 0.895  | 0.882 |
+| Neural Network (MLP) | 0.952    | 0.888       | 0.866     | 0.914  | 0.888 |
 
 ## Model 3 
 
 - get_dummies categorical data.
 - perform oversampling with SMOTE.
 
-| |Accuracy             | CV Accuracy | MSE   | MAE          |
-|----------------------|-------------|-------|-------|-------|
-| Logistic Regression  | 0.792       | 0.833 | 0.347 | 0.254 |
-| Decision Tree        | 0.763       | 0.804 | 0.393 | 0.289 |
-| Neural Network (MLP) | 0.906       | 0.898 | 0.146 | 0.112 |
+|        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |
+|:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|
+| Logistic Regression  | 0.792    | 0.833       | 0.381     | 0.455  | 0.397 |
+| Decision Tree        | 0.961    | 0.844       | 0.925     | 0.926  | 0.922 |
+| Neural Network (MLP) | 0.886    | 0.888       | 0.727     | 0.787  | 0.750 |
 
 ## Model 4
 
 - get_dummies categorical data.
 - perform undersampling with NearMiss.
 
-| |Accuracy             | CV Accuracy | MSE   | MAE         |
-|----------------------|-------------|-------|-------|-------|
-| Logistic Regression  | 0.751       | 0.833 | 0.382 | 0.293 |
-| Decision Tree        | 0.557       | 0.804 | 1.264 | 0.717 |
-| Neural Network (MLP) | 0.638       | 0.898 | 0.551 | 0.424 |
+|        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |
+|:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|
+| Logistic Regression  | 0.751    | 0.833       | 0.639     | 0.793  | 0.665 |
+| Decision Tree        | 0.601    | 0.844       | 0.715     | 0.721  | 0.595 |
+| Neural Network (MLP) | 0.638    | 0.888       | 0.596     | 0.768  | 0.613 |
