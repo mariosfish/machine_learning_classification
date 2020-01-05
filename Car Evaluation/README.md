@@ -31,13 +31,14 @@
 ## Model 2 with K-means
 
 - get_dummies categorical data.
+- perform feature selection.
 - perform k-means
 
 |        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |
 |:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|
-| Logistic Regression  |   0.929  |    0.844    |   0.833   |  0.854 | 0.843 |
-| Decision Tree        |   0.952  |    0.851    |   0.869   |  0.889 | 0.877 |
-| Neural Network (MLP) |   0.950  |    0.892    |   0.869   |  0.923 | 0.892 |
+| Logistic Regression  |   0.934  |    0.849    |   0.835   |  0.850 | 0.842 |
+| Decision Tree        |   0.961  |    0.869    |   0.893   |  0.930 | 0.909 |
+| Neural Network (MLP) |   0.950  |    0.871    |   0.850   |  0.893 | 0.867 |
 
 ## Model 3 
 
