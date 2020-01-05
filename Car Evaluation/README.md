@@ -12,11 +12,11 @@
 
 - Label encoder categorical data.
 
-| Models               | Accuracy | CV Accuracy | Precision | Recall | F1    |
-|----------------------|----------|-------------|-----------|--------|-------|
-| Logistic Regression  | 0.819    | 0.779       | 0.707     | 0.643  | 0.667 |
-| Decision Tree        | 0.969    | 0.884       | 0.892     | 0.903  | 0.894 |
-| Neural Network (MLP) | 0.925    | 0.898       | 0.845     | 0.807  | 0.815 |
+|        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |
+|:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|
+| Logistic Regression  |   0.819  |    0.779    |   0.707   |  0.643 | 0.667 |
+| Decision Tree        |   0.967  |    0.879    |   0.914   |  0.920 | 0.916 |
+| Neural Network (MLP) |   0.925  |    0.898    |   0.845   |  0.807 | 0.815 |
 
 ## Model 2
 
@@ -24,9 +24,20 @@
 
 |        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |
 |:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|
-| Logistic Regression  | 0.929    | 0.833       | 0.833     | 0.854  | 0.843 |
-| Decision Tree        | 0.960    | 0.844       | 0.872     | 0.895  | 0.882 |
-| Neural Network (MLP) | 0.952    | 0.888       | 0.866     | 0.914  | 0.888 |
+| Logistic Regression  |   0.929  |    0.833    |   0.833   |  0.854 | 0.843 |
+| Decision Tree        |   0.958  |    0.839    |   0.876   |  0.905 | 0.888 |
+| Neural Network (MLP) |   0.952  |    0.888    |   0.866   |  0.914 | 0.888 |
+
+## Model 2 with K-means
+
+- get_dummies categorical data.
+- perform k-means
+
+|        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |
+|:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|
+| Logistic Regression  |   0.929  |    0.844    |   0.833   |  0.854 | 0.843 |
+| Decision Tree        |   0.952  |    0.851    |   0.869   |  0.889 | 0.877 |
+| Neural Network (MLP) |   0.950  |    0.892    |   0.869   |  0.923 | 0.892 |
 
 ## Model 3 
 
@@ -35,9 +46,9 @@
 
 |        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |
 |:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|
-| Logistic Regression  | 0.792    | 0.833       | 0.381     | 0.455  | 0.397 |
-| Decision Tree        | 0.961    | 0.844       | 0.925     | 0.926  | 0.922 |
-| Neural Network (MLP) | 0.886    | 0.888       | 0.727     | 0.787  | 0.750 |
+| Logistic Regression  |   0.792  |    0.833    |   0.381   |  0.455 | 0.397 |
+| Decision Tree        |   0.954  |    0.839    |   0.889   |  0.908 | 0.898 |
+| Neural Network (MLP) |   0.884  |    0.888    |   0.712   |  0.752 | 0.722 |
 
 ## Model 4
 
