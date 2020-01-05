@@ -39,6 +39,18 @@
 | Decision Tree        | 0.915       | 0.764     | 0.646  | 0.484 | 0.553 | 0.928 |
 | Neural Network (MLP) | 0.907       | 0.775     | 0.586  | 0.498 | 0.538 | 0.937 |
 
+## Model 3 with kmeans and feature selection
+
+- get_dummies for categorical data + column "pdays".
+- perform feature selection
+- perform Kmeans
+
+|        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |  AUC  |
+|:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|:-----:|
+| Logistic Regression  |   0.910  |    0.885    |   0.648   |  0.380 | 0.479 | 0.919 |
+| Decision Tree        |   0.900  |    0.826    |   0.555   |  0.417 | 0.476 | 0.746 |
+| Neural Network (MLP) |   0.913  |    0.834    |   0.642   |  0.446 | 0.526 | 0.924 |
+
 ## Model 4
 
 - get_dummies for categorical data + column "pdays".
