@@ -13,11 +13,11 @@
 - missing values for `horsepower` replaced with the mean of `horsepower`.
 - all columns are numbers.
 
-| |MSE                  | MAE    | CV Accuracy | Accuracy |       
-|----------------------|--------|-------------|----------|-------|
-| Linear Regression    | 11.293 | 2.570       | 0.806    | 0.811 |
-| Decision Tree        | 13.965 | 2.660       | 0.811    | 0.766 |
-| Neural Network (MLP) | 6.894  | 1.749       | 0.850    | 0.884 |
+|        Models        |  MAE  |   MSE  |  RMSE | CV MAE | CV MSE | CV RMSE |
+|:--------------------:|:-----:|:------:|:-----:|:------:|:------:|:-------:|
+| Linear Regression    | 2.570 | 11.286 | 3.359 |  2.748 | 12.902 |  3.592  |
+| Decision Tree        | 2.368 | 12.703 | 3.564 |  2.914 | 16.136 |  4.017  |
+| Neural Network (MLP) | 1.752 |  6.876 | 2.622 |  2.802 | 14.255 |  3.776  |
 
 ## Model 2
 
@@ -25,23 +25,23 @@
 - `cylinders`, `model year` and `origin` as category.
 - categorical data encoded with Label encoder.
 
-| |MSE                  | MAE    | CV Accuracy | Accuracy |       
-|----------------------|--------|-------------|----------|-------|
-| Linear Regression    | 10.754 | 2.500       | 0.571    | 0.820 |
-| Decision Tree        | 13.965 | 2.660       | 0.549    | 0.766 |
-| Neural Network (MLP) | 7.490  | 1.849       | 0.391    | 0.874 |
+|        Models        |  MAE  |   MSE  |  RMSE | CV MAE | CV MSE | CV RMSE |
+|:--------------------:|:-----:|:------:|:-----:|:------:|:------:|:-------:|
+| Linear Regression    | 2.500 | 10.754 | 3.279 |  2.693 | 12.550 |  3.543  |
+| Decision Tree        | 2.612 | 15.688 | 3.961 |  2.897 | 16.042 |  4.005  |
+| Neural Network (MLP) | 1.849 |  7.490 | 2.737 |  3.639 | 21.659 |  4.654  |
 
-## Model 3 (best)
+## Model 3
 
 - missing values for `horsepower` replaced with the mean of `horsepower`.
 - `cylinders`, `model year` and `origin` as category.
 - categorical data encoded with get_dummies.
 
-| |MSE                  | MAE    | CV Accuracy | Accuracy |       
-|----------------------|--------|-------------|----------|-------|
-| Linear Regression    | 8.385  | 2.103       | 0.834    | 0.859 |
-| Decision Tree        | 21.924 | 3.472       | 0.740    | 0.633 |
-| Neural Network (MLP) | 6.554  | 1.834       | 0.822    | 0.890 |
+|        Models        |  MAE  |   MSE  |  RMSE | CV MAE |  CV MSE | CV RMSE |
+|:--------------------:|:-----:|:------:|:-----:|:------:|:-------:|:-------:|
+| Linear Regression    | 2.103 |  8.385 | 2.896 |  2.727 |  13.703 |  3.702  |
+| Decision Tree        | 3.258 | 22.601 | 4.754 |  3.904 |  28.273 |  5.317  |
+| Neural Network (MLP) | 1.834 |  6.554 | 2.560 |  8.205 | 106.624 |  10.326 |
 
 ## Model 4
 
@@ -50,10 +50,22 @@
 - categorical data encoded with get_dummies.
 - exclude column `weight` due to high correlation with `discplacement`.
 
-| |MSE                  | MAE    | CV Accuracy | Accuracy        |
-|----------------------|--------|-------------|----------|-------|
-| Linear Regression    | 9.957  | 2.265       | 0.807    | 0.833 |
-| Decision Tree        | 19.354 | 3.259       | 0.681    | 0.676 |
-| Neural Network (MLP) | 7.431  | 1.945       | 0.814    | 0.875 |
+|        Models        |  MAE  |   MSE  |  RMSE | CV MAE | CV MSE | CV RMSE |
+|:--------------------:|:-----:|:------:|:-----:|:------:|:------:|:-------:|
+| Linear Regression    | 2.128 |  8.736 | 2.956 |  2.832 | 14.330 |  3.785  |
+| Decision Tree        | 2.819 | 15.703 | 3.963 |  3.695 | 27.040 |  5.200  |
+| Neural Network (MLP) | 1.790 |  6.768 | 2.602 |  5.772 | 59.731 |  7.729  |
 
 
+## Model 5 (best)
+
+- missing values for `horsepower` replaced with mode of `horsepower`.
+- `origin` encoded with get_dummies.
+- exclude columns `horsepower` and `displacement` due to high correlation with `weight`.
+
+
+|        Models        |  MAE  |   MSE  |  RMSE | CV MAE | CV MSE | CV RMSE |
+|:--------------------:|:-----:|:------:|:-----:|:------:|:------:|:-------:|
+| Linear Regression    | 2.533 | 11.211 | 3.348 |  2.748 | 12.804 |  3.578  |
+| Decision Tree        | 2.407 | 12.784 | 3.576 |  2.733 | 14.801 |  3.847  |
+| Neural Network (MLP) | 1.924 |  6.794 | 2.607 |  2.451 | 11.271 |  3.357  |
