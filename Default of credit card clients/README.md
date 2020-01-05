@@ -42,22 +42,35 @@
 
 - get_dummies categorical data (`'EDUCATION'`,`'MARRIAGE'`,`'SEX'`,`'PAY_1'`, `'PAY_2'`, `'PAY_3'`, `'PAY_4'`, `'PAY_5'`, `'PAY_6'`).
 
-| |Accuracy             | CV Accuracy | Precision | Recall | F1    | AUC          |
-|----------------------|-------------|-----------|--------|-------|-------|-------|
-| Logistic Regression  | 0.817       | 0.779     | 0.677  | 0.353 | 0.464 | 0.772 |
-| Decision Tree        | 0.814       | 0.818     | 0.700  | 0.301 | 0.421 | 0.719 |
-| Neural Network (MLP) | 0.813       | 0.779     | 0.652  | 0.357 | 0.462 | 0.765 |
+|        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |  AUC  |
+|:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|:-----:|
+| Logistic Regression  |   0.817  |    0.779    |   0.677   |  0.353 | 0.464 | 0.772 |
+| Decision Tree        |   0.736  |    0.727    |   0.411   |  0.409 | 0.410 | 0.609 |
+| Neural Network (MLP) |   0.813  |    0.777    |   0.652   |  0.357 | 0.462 | 0.765 |
 
 ## Model 4
 
 - get_dummies categorical data (`'EDUCATION'`,`'MARRIAGE'`,`'SEX'`,`'PAY_1'`, `'PAY_2'`, `'PAY_3'`, `'PAY_4'`, `'PAY_5'`, `'PAY_6'`).
 - exclude features `BILL_ATM2`,..., `BILL_ATM6`.
 
-| |Accuracy             | CV Accuracy | Precision | Recall | F1    | AUC          |
-|----------------------|-------------|-----------|--------|-------|-------|-------|
-| Logistic Regression  | 0.817       | 0.779     | 0.677  | 0.353 | 0.464 | 0.771 |
-| Decision Tree        | 0.814       | 0.818     | 0.700  | 0.301 | 0.421 | 0.719 |
-| Neural Network (MLP) | 0.817       | 0.777     | 0.650  | 0.371 | 0.472 | 0.769 |
+|        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |  AUC  |
+|:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|:-----:|
+| Logistic Regression  |   0.817  |    0.779    |   0.677   |  0.353 | 0.464 | 0.771 |
+| Decision Tree        |   0.814  |    0.818    |   0.700   |  0.301 | 0.421 | 0.719 |
+| Neural Network (MLP) |   0.814  |    0.722    |   0.650   |  0.371 | 0.472 | 0.769 |
+
+## Model 4 with Kmeans
+
+- get_dummies categorical data (`'EDUCATION'`,`'MARRIAGE'`,`'SEX'`,`'PAY_1'`, `'PAY_2'`, `'PAY_3'`, `'PAY_4'`, `'PAY_5'`, `'PAY_6'`).
+- exclude features `BILL_ATM2`,..., `BILL_ATM6`.
+- perform feature selection.
+- perform Kmeans.
+
+|        Models        | Accuracy | CV Accuracy | Precision | Recall |   F1  |  AUC  |
+|:--------------------:|:--------:|:-----------:|:---------:|:------:|:-----:|:-----:|
+| Logistic Regression  |   0.814  |    0.819    |   0.666   |  0.344 | 0.453 | 0.765 |
+| Decision Tree        |   0.801  |    0.800    |   0.599   |  0.341 | 0.435 | 0.682 |
+| Neural Network (MLP) |   0.815  |    0.820    |   0.658   |  0.366 | 0.470 | 0.766 |
 
 ## Model 5
 
